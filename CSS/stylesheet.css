@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Raleway&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: black;
+  outline: 0;
+}
+
+a:visited {
+  color: black;
+}
+
+.header {
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  font-family: "Bellefair", serif;
+  position: relative;
+}
+
+.header div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  padding-top: 4rem;
+}
+
+.title {
+  color: white;
+  font-size: 10rem;
+  margin-left: 50px;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: white;
+  font-size: 4rem;
+  margin-left: 700px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.footer {
+  text-align: center;
+  background-image: linear-gradient(#A0BCC2, #f0f0f0);
+  padding: 5%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-bottom: 50px;
+}
+
+.footer-link:hover {
+  color: #001D6E;
+}
+
+.copy-right {
+  font-size: 0.7rem;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+}
+
+.description-text {
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.instruments {
+  margin-top: 2rem;
+}
+
+.instruments-article {
+  margin-top: 1rem;
+}
+
+.article-heading {
+  font-size: 1.5rem;
+}
+
+.instrument-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.gallery-image {
+  width: 240px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery-image .foreground {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+}
+
+.gallery-image .foreground:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1px);
+}
+
+.gallery-image .foreground .gallery-image-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-image .foreground .name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0);
+  transform: translateY(-100%);
+}
+
+.gallery-image .foreground:hover .name {
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+
+.gallery-image .foreground .color {
+  color: rgba(255, 255, 255, 0);
+}
+.gallery-image .foreground:hover .color {
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+
+.gallery-image .foreground .brand {
+  color: rgba(255, 255, 255, 0);
+}
+.gallery-image .foreground:hover .brand {
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+
+.gallery-image .foreground .price {
+  color: rgba(255, 255, 255, 0);
+}
+.gallery-image .foreground:hover .price {
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+
+.gallery-image .foreground .buy-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  background-color: rgba(0, 255, 149, 0);
+  color: rgba(240, 240, 240, 0);
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gallery-image .foreground:hover .buy-btn {
+  background-color: rgb(0, 165, 91);
+  color: rgba(240, 240, 240);
+}
+
+.gallery-image .foreground:hover .buy-btn:hover {
+  background-color: rgb(11, 140, 82);
+  color: rgba(240, 240, 240);
+  transform: translateY(-5px);
+}
+
+.copy-right {
+  font-size: 0.8rem;
+  text-align: center;
+}
